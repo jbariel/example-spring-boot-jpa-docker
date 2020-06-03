@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  app:
+    image: jpa:4
+    networks:
+      - appnet
+    ports:
+      - 8888:8080
+    
+networks:
+  appnet:
+    driver: bridge
